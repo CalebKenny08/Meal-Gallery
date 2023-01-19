@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 99vw;
+    height: 100vh;
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url("https://thumbs.dreamstime.com/b/fresh-organic-vegetables-37796756.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 2px solid magenta; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 5em;
+}
+
+.sidebar {
+    width: 25%;
+    height: 60vh;
+    /* border: 2px solid magenta; */
+}
+
+.sidebar img {
+    width: 100%;
+}
+
+.view-msg {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.container {
+    width: 70vw;
+    height: 70vh;
+    /* border: 2px solid magenta; */
+    padding: 3em 4em;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 2em;
+}
+
+.item {
+    width: 24%;
+    height: 270px;
+    /* border: 2px solid magenta; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item img {
+    width: 73%;
+}
+
+.details {
+    height: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+}
+
+.details button {
+    background: red;
+    border: none;
+    color: white;
+    padding: .8em 1.5em;
+    cursor: pointer;
+}
+
+.details button:hover {
+    background: rgba(255, 0, 0, 0.8);
+}
